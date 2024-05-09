@@ -22,6 +22,8 @@ public class ToStringMain2 {
         ObjectPrinter.print(dog1);
         ObjectPrinter.print(dog2);
 
+        // toString()을 오버라이딩해버리면, 객체 주소값 못 찾게됨. 그 경우에
+        // 아래처럼 하면됨. Integer.toHexString(System.identityHashCode(obj));ㅇㅇ
         String refValue = Integer.toHexString(System.identityHashCode(dog1));
         System.out.println("refValue = " + refValue);
     }

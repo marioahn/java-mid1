@@ -6,3 +6,4 @@ public class LangMain {
         System.out.println("hello java");
     }
 }
+
